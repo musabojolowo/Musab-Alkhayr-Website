@@ -153,12 +153,6 @@ nav ul li a:hover {
     font-weight: 600;
     transition: 0.3s ease;
 }
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
 /* ===== SECTIONS ===== */
 .section {
     max-width: 850px;
@@ -327,13 +321,6 @@ body.dark-mode footer {
     transition: transform 0.3s ease, color 0.3s ease;
     margin-bottom: 12px;
 }
-
-/* Hover effect for cards */
-.service-card:hover i {
-    transform: scale(1.2);
-    color: #f9b233; /* accent color on hover */
-}
-
 /* Dark mode icon colors */
 body.dark-mode .service-card i {
     color: #f9b233; /* bright accent in dark mode */
@@ -342,3 +329,25 @@ body.dark-mode .service-card i {
 body.dark-mode .service-card:hover i {
     color: #00e5c3; /* hover accent in dark mode */
 }
+/* Links Hover */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00e5c3;
+    text-decoration: underline;
+}
+
+/* CTA Buttons Hover */
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    background-color: #00bfa5;
+    color: white;
+}
+
+/* Service Cards Hover */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    background-color: #e0f7f5;
+}
+
